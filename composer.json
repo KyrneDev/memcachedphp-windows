@@ -1,0 +1,38 @@
+{
+  "name": "cdk2020/memcachedphp-windows",
+  "type": "library",
+  "description": "Memcached PHP extension emulator for Windows environments.",
+  "keywords": [
+    "memcache",
+    "memcached",
+    "caching",
+    "emulator",
+    "windows",
+    "cache"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "CDK2020",
+      "email": "charlie.k@redevs.org"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Memcached": "src/",
+      "MemcachedException": "src/"
+    },
+    "psr-4": {
+      "CDK2020\\MemcachedEmulator\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
